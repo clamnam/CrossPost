@@ -9,12 +9,14 @@ dropdownList.onchange = (ev) => {
     // makes a var thats initialised to the selected value
     let subsetValue = (dropdownList.value);
     // foreach on the subsetOptions array that creates options for each of the elements within a dropdown
-    subsetOptions[selectedOption].forEach(function(subsetOption) {
-        const option = document.createElement("option");
-        option.value = subsetOption;
-        option.text = subsetOption;
-        subsetSelect.appendChild(option);
-    });
+    console.log(subsetOptions.find(element => element == dropdownList.value)+'4')
+    // subsetOptions[selectedOption].forEach(function(subsetOption) {
+    //     const option = document.createElement("option");
+    //     option.value = subsetOption;
+    //     option.text = subsetOption;
+    //     subsetSelect.appendChild(option);
+    // });
+    
 }
 // array full of objects
     const subsetOptions = {
@@ -44,5 +46,19 @@ dropdownList.onchange = (ev) => {
         'toys-games': ['Action Figures & Toys', 'Board Games & Puzzles', 'Educational Toys', 'Electronic Toys', 'Outdoor Toys & Games', 'Soft Toys', 'Other Toys & Games'],
         'wedding': ['Bridal Accessories', 'Bridal Wear', 'Groom Wear', 'Wedding Decorations & Accessories', 'Wedding Dresses', 'Wedding Suits', 'Other Wedding']
     }
+    const doneDealSections = {
+        'cars': ['Alfa Romeo', 'Audi', 'BMW', 'Chevrolet', 'Chrysler', 'Citroen', 'Dacia', 'Daewoo', 'Daihatsu', 'Dodge', 'Ferrari', 'Fiat', 'Ford', 'Honda', 'Hyundai', 'Isuzu', 'Jaguar', 'Jeep', 'Kia', 'Lamborghini', 'Lancia', 'Land Rover', 'Lexus', 'Maserati', 'Mazda', 'Mercedes-Benz', 'MG', 'Mini', 'Mitsubishi', 'Nissan', 'Opel', 'Peugeot', 'Porsche', 'Renault', 'Rover', 'Saab', 'Seat', 'Skoda', 'Smart', 'SsangYong', 'Subaru', 'Suzuki', 'Toyota', 'Vauxhall', 'Volkswagen', 'Volvo', 'Other Cars'],
+        'property': ['For Sale', 'To Let', 'Holiday Homes'],
+        'electronics': ['Audio', 'Cameras & Photography', 'Computers & Gaming', 'Home Appliances', 'Phones & Accessories', 'TV, DVD & Video'],
+        'home-garden': ['Antiques & Collectables', 'Furniture & Interiors', 'DIY & Renovations', 'Garden & Patio', 'Home Entertainment', 'Kitchen & Dining'],
+        'sports-fitness': ['Bicycles', 'Fitness', 'Other Sports & Leisure', 'Watersports'],
+        'hobbies-collectibles': ['Books & Magazines', 'Coins & Stamps', 'Memorabilia', 'Music & Instruments', 'Toys & Games', 'Wine & Spirits', 'Other Hobbies & Interests'],
+        'fashion-health-beauty': ['Clothes & Accessories', 'Health & Beauty'],
+        'baby-kids': ['Baby & Toddler', 'Toys & Games'],
+        'jobs-education': ['Job Seekers & CVs', 'Classes', 'Courses & Training', 'Job Opportunities', 'Internship'],
+        'services': ['Building & Trades', 'Childcare', 'Cleaning', 'Entertainment', 'Financial', 'Health & Beauty', 'IT', 'Legal', 'Moving & Storage', 'Pet Services', 'Photography', 'Printing & Reprographics', 'Transport'],
+        'pets': ['Dogs', 'Cats', 'Fish', 'Horses', 'Birds', 'Reptiles', 'Small Furries', 'Other Pets']
+    };
+    
 
 

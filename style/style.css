@@ -1,3 +1,6 @@
 .hide {
 	display: none;
 }
+.p-1 {
+	padding: 0.25rem;
+}
