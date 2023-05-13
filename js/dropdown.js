@@ -1,8 +1,11 @@
 // sets dropdownList to the dropdown element
 let dropdownList = document.getElementById('select_box');
 // when something is selected, run
+
 dropdownList.onchange = (ev) => {
     // console logs the selected value
+    console.log(dropdownList);
+
     console.log("Selected value is: " + dropdownList.value);
     // when something is selected show another dropdown
     document.getElementById("subset").classList.remove('hide');

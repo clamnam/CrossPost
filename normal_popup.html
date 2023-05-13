@@ -49,20 +49,20 @@
                     placeholder="Enter title">
             </div>
             <label class="text-light" for="quality">Quality:</label>
-            <select class="form-control" name="quality" id="select_box">
+            <select class="form-control" name="quality" id="quality">
                 <option value="new">New</option>
                 <option value="used">Used</option>
 
             </select>
 
             <label class="text-light" for="payment-method">Payment method:</label>
-            <select class="form-control" name="payment-method" id="select_box">
+            <select class="form-control" name="payment-method" id="payment-method">
                 <option value="paypal">paypal</option>
                 <option value="cash">cash</option>
 
             </select>
             <label class="text-light" for="shipping">Shipping:</label>
-            <select class="form-control" name="payment-method" id="select_box">
+            <select class="form-control" name="payment-method" id="delivery">
                 <option value="collection">Collection</option>
                 <option value="delivery">Delivery</option>
                 <option value="Post-Courier">Post/Courier</option>
@@ -132,10 +132,10 @@
                 <option value="wedding">Wedding</option>
 
             </select>
+            <select name="subset" id="subset" class="hide">djalkdj</select>
 
 
             <!-- selectbox created based on above dropdown by dropdown.js-->
-            <select name="subset" id="subset" class="hide">djalkdj</select>
 
 
             <button class=" btn btn-primary submit px-5 m-4">Submit</button>
@@ -143,6 +143,6 @@
     </div>
 </body>
 
+<script src="./js/dropdown.js"></script>
 
 </html>
-<script src="./js/dropdown.js"></script>
